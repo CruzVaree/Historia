@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Turismo en Morelos</title>
+</head>
+
+<body>
+
+    <h1>Lugares Turísticos de Morelos</h1>
+
+    <div class="menu">
+        <button id="btn-museos" onclick="mostrarMenu('museos')">Museos</button>
+        <button id="btn-haciendas" onclick="mostrarMenu('haciendas')">Haciendas</button>
+        <button id="btn-balnearios" onclick="mostrarMenu('balnearios')">Balnearios</button>
+    </div>
+
+    <div id="museos" class="submenu" style="display:none;">
+        <div class="img-container">
+            <img src="IMAGENES/MPalacio.jpeg" alt="Museo 1" onclick="mostrarInfo('Museo Palacio de Cortés', 'El Palacio de Cortés se encuentra en Cuernavaca y es una de las edificaciones civiles más antiguas que se conservan en México. Fue construido por orden de Hernán Cortés entre 1531 y 1535 como residencia y sede del Marquesado del Valle de Oaxaca. Actualmente alberga el Museo Regional de los Pueblos de Morelos, donde se exhiben piezas arqueológicas, históricas y artísticas.', 'Martes a domingo: 9:00 a.m. a 6:00 p.m. \n Lunes: cerrado.', 'Nacionales: $105 MXN \n Extranjeros: $210 MXN \n Domingos entrada gratuita para mexicanos.', 'Visitas guiadas, guardarropa, librería, tienda de recuerdos, sanitarios y áreas de apoyo accesibles.', 'Francisco Leyva 100, Centro, Cuernavaca, Morelos.')">
+            <div class="img-title">Palacio de Cortés</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/MRobert.jpeg" alt="Museo 2" onclick="mostrarInfo('Museo Robert Brady', 'Es una casa-museo ubicada en el centro de Cuernavaca, detrás de la Catedral. Fue la residencia del artista y coleccionista estadounidense Robert Brady, quien reunió una extraordinaria colección de obras de arte, esculturas, muebles y objetos decorativos de México y diferentes partes del mundo.', 'Martes a domingo: 10:00 a.m. a 6:00 p.m. \n Lunes: cerrado.', 'Entrada general: $70 MXN \n Estudiantes, profesores e INAPAM: $50 MXN.', 'Visitas guiadas (previa reservación), guardarropa, tienda, biblioteca, cafetería, estacionamiento y Wi-Fi.', 'Netzahualcóyotl No. 4, Centro, Cuernavaca, Morelos.')">
+            <div class="img-title">Museo Robert Brady</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/Magrarismo.jpeg" alt="Museo 3" onclick="mostrarInfo('Museo del Agrarismo Ex Hacienda de Chinameca', 'Ubicado en el municipio de Ayala, este lugar histórico es de gran relevancia nacional por ser el sitio donde murió el general Emiliano Zapata en 1919. El museo explica detalladamente la historia del agrarismo en México mediante documentos, objetos de la época y material multimedia interactivo dividido en ocho secciones.', 'Martes a domingo: 9:00 a.m. a 5:00 p.m. \n Lunes: cerrado.', 'Entrada general: $30 MXN \n Estudiantes, maestros e INAPAM: 50% de descuento \n Domingo: entrada libre.', 'Visitas guiadas, centro de documentación, biblioteca, estacionamiento, accesibilidad y tienda.', 'Lázaro Cárdenas s/n, Chinameca, Ayala, Morelos.')">
+            <div class="img-title">Ex Hacienda de Chinameca</div>
+        </div>
+        
+        <div class="img-container">
+            <img src="IMAGENES/Martep.jpeg" alt="Museo 4" onclick="mostrarInfo('Museo de Arte Popular de Morelos', 'El Museo Morelense de Arte Popular (MMAPO) es un espacio dedicado a conservar, exhibir y promover las artesanías tradicionales del estado. En sus salas se aprecian piezas únicas de alfarería, textiles, cerería y cartonería elaboradas por manos morelenses.', 'Martes a domingo: 10:00 a.m. a 5:00 p.m. \n Lunes: cerrado.', 'Entrada gratuita.', 'Tienda de artesanías, talleres, exposiciones temporales, librería, actividades interactivas y elevador.', 'Miguel Hidalgo #239, Centro, Cuernavaca, Morelos.')">
+            <div class="img-title">Arte Popular (MMAPO)</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/Mcarlos.jpeg" alt="Museo 5" onclick="mostrarInfo('Museo de Tepoztlán Carlos Pellicer', 'Ubicado detrás del Ex Convento de la Natividad, fue fundado gracias a la donación que realizó el célebre poeta Carlos Pellicer de su colección particular de piezas prehispánicas. Alberga más de mil objetos arqueológicos de las culturas olmeca, maya, zapoteca y mexica.', 'Martes a domingo: 10:00 a.m. a 6:00 p.m. \n Lunes: cerrado.', 'Donativo o entrada general: $10 MXN.', 'Exposición permanente de arte prehispánico, visitas guiadas y acceso a los espacios históricos del antiguo granero.', 'Arq. Pablo González No. 2, Centro, Tepoztlán, Morelos.')">
+            <div class="img-title">Museo Carlos Pellicer</div>
+        </div>
+    </div>
+
+    <div id="haciendas" class="submenu" style="display:none;">
+        <div class="img-container">
+            <img src="IMAGENES/haciendacortes.jpeg" alt="Hacienda 1" onclick="mostrarInfo('Hotel & Spa Hacienda Cortés', 'Una antigua e imponente hacienda azucarera del siglo XVI fundada por Hernán Cortés. Actualmente funciona como hotel histórico, restaurante de alta cocina, spa y centro de eventos exclusivos. Destaca por sus impresionantes muros cubiertos de raíces selváticas y leyendas virreinales.', 'Hotel: abierto 24 horas. \n Restaurante La Casona: Lunes a domingo de 7:00 a.m. a 11:00 p.m.', 'Acceso a áreas públicas y restaurante sin costo (consumo independiente). Tarifas de hospedaje según temporada.', 'Hospedaje, restaurante, spa, jardines históricos, salones de eventos, Wi-Fi y estacionamiento.', 'Plaza Kennedy No. 90, Atlacomulco, Jiutepec, Morelos.')">
+            <div class="img-title">Hacienda de Cortés</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/haciendagabriel.jpeg" alt="Hacienda 2" onclick="mostrarInfo('Hacienda San Gabriel de las Palmas', 'Construida en 1529, comenzó originalmente como un monasterio franciscano antes de convertirse en una rica hacienda azucarera. Hoy en día es un hotel boutique de lujo que conserva majestuosamente sus bóvedas coloniales, arcos de piedra y su distinguido toque histórico.', 'Hotel: abierto 24 horas. \n Day Pass: 9:00 a.m. a 5:00 p.m. (Sujeto a disponibilidad).', 'Day Pass: Desde $1,350 MXN por persona (incluye crédito para alimentos y bebidas). Hospedaje varía por habitación.', 'Hospedaje de lujo, restaurante, spa con temazcal, alberca climatizada, canchas de tenis y paseos a caballo.', 'Carr. Federal Cuernavaca–Chilpancingo Km 41.8, Amacuzac, Morelos.')">
+            <div class="img-title">San Gabriel de las Palmas</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/haciendacocoyoc.jpeg" alt="Hacienda 3" onclick="mostrarInfo('Hacienda Cocoyoc', 'Conocida históricamente como El Paraíso de América, esta hacienda colonial posee un encanto sin igual. Cuenta con colosales acueductos antiguos, frondosos jardines y una excelente infraestructura hotelera catalogada como Monumento Histórico protegido.', 'Hotel: abierto 24 horas. \n Albercas: 9:00 a.m. a 7:00 p.m. \n Campo de golf: 7:00 a.m. a 6:00 p.m.', 'Habitaciones desde $2,950 MXN por noche (Precios aproximados según temporada).', 'Hospedaje, restaurante, spa (más de 60 tratamientos), albercas, campo de golf, salones y jardines históricos.', 'Carretera Federal Cuernavaca–Cuautla Km 32.5, Cocoyoc, Yautepec, Morelos.')">
+            <div class="img-title">Hacienda Cocoyoc</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/haciendavistah.jpeg" alt="Hacienda 4" onclick="mostrarInfo('Hotel Hacienda Vista Hermosa', 'Fundada en 1529 por Hernán Cortés, esta fortaleza colonial sirvió como un importante ingenio azucarero. Conserva túneles subterráneos secretos, mazmorras de la época, una bella capilla virreinal y majestuosas albercas rodeadas de imponentes arcadas de piedra.', 'Hotel: abierto 24 horas. \n Restaurante Los Arcos: 7:30 a.m. a 10:00 p.m.', 'Acceso según servicio contratado (Hospedaje, restaurante o eventos).', 'Hospedaje, restaurante, bares, alberca, paseos a caballo, spa, canchas deportivas y salón de juegos.', 'Carretera Alpuyeca–Tequesquitengo Km 7, San José Vista Hermosa, Puente de Ixtla, Morelos.')">
+            <div class="img-title">Hacienda Vista Hermosa</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/haciendafiesta.jpeg" alt="Hacienda 5" onclick="mostrarInfo('Fiesta Americana Hacienda San Antonio El Puente', 'Hermosa hacienda del siglo XVII que fusiona magistralmente la majestuosidad de la arquitectura colonial con el confort de la hotelería moderna. Sus espectaculares pasillos techados y espectaculares árboles centenarios la hacen ideal para el descanso.', 'Hotel: abierto 24 horas. \n Spa: Lun a Sáb 9:00 a.m. a 8:00 p.m. | Dom 8:00 a.m. a 5:00 p.m.', 'Tarifas variables según la temporada. Servicios de restaurante y spa disponibles para no huéspedes.', 'Hospedaje, restaurante, spa de clase mundial, dos albercas climatizadas, gimnasio y servicio Pet Friendly.', 'Reforma No. 2, Fracc. Real del Puente, Xochitepec, Morelos.')">
+            <div class="img-title">Hacienda San Antonio</div>
+        </div>
+    </div>
+
+    <div id="balnearios" class="submenu" style="display:none;">
+        <div class="img-container">
+            <img src="IMAGENES/lasestacas.jpeg" alt="Balneario 1" onclick="mostrarInfo('Parque Natural Las Estacas', 'Un espectacular paraíso ecológico caracterizado por un espectacular río de aguas cristalinas color turquesa alimentado por un gran manantial borbollón. Mantiene una temperatura constante y refrescante de 23 grados durante todo el año, ideal para conectar de forma directa con la naturaleza.', 'Abierto todos los días de 8:00 a.m. a 6:00 p.m.', 'Entrada general: $600 MXN \n Menores de 1.25m: $380 MXN \n Menores de 90cm: Gratis.', 'Río natural, buceo, snorkel, kayak, camping, glamping, hotel, spa, restaurantes, lockers y yoga de fin de semana.', 'Carretera Tlaltizapán–Cuautla Km 6, Tlaltizapán, Morelos.')">
+            <div class="img-title">Las Estacas</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/exhaciendat.jpeg" alt="Balneario 2" onclick="mostrarInfo('Parque Acuático Ex Hacienda de Temixco', 'Uno de los parques acuáticos más icónicos del estado, construido sobre una auténtica e imponente hacienda del siglo XVII. Ofrece la combinación perfecta de historia virreinal y atracciones acuáticas modernas ideales para la diversión familiar.', 'Abierto los 365 días del año de 9:00 a.m. a 6:00 p.m.', 'Adultos: $480 MXN \n Niños e INAPAM: $320 MXN \n Menores de 95cm: Gratis.', 'Alberca y río con olas, toboganes gigantes, multipista acuática, canchas deportivas, restaurantes y cabañas.', 'Carretera Federal México–Acapulco Km 85, Temixco, Morelos.')">
+            <div class="img-title">Ex Hacienda de Temixco</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/hedionda.jpeg" alt="Balneario 3" onclick="mostrarInfo('Balneario Agua Hedionda', 'Famoso a nivel mundial por sus propiedades minero-medicinales, este histórico balneario cuenta con un flujo abundante de agua sulfurosa proveniente de los volcanes, manteniendo una agradable temperatura promedio de 27 grados ideal para el turismo de salud.', 'Abierto todos los días de 7:00 a.m. a 5:00 p.m.', 'Entre semana: Adultos $100 MXN / Niños $80 MXN \n Fines de semana y festivos: Adultos $130 MXN / Niños $100 MXN.', 'Alberca de manantial, albercas privadas, vapor, sauna, spa, asadores, canchas y vestidores.', 'Av. Progreso S/N, Col. Otilio Montaño, Cuautla, Morelos.')">
+            <div class="img-title">Agua Hedionda</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/elrollo.jpeg" alt="Balneario 4" onclick="mostrarInfo('Parque Acuático El Rollo', 'Considerado uno de los parques acuáticos más grandes e innovadores de toda América Latina. Cuenta con atracciones extremas de clase mundial, olas artificiales para surfear, toboganes de gran altura y completas zonas de hospedaje familiar.', 'Abierto los 365 días del año de 9:00 a.m. a 6:00 p.m.', 'Adultos (Fin de semana): $650 MXN / (Lun-Jue): $550 MXN \n Niños (Fin de semana): $350 MXN / (Lun-Jue): $300 MXN \n INAPAM: $430 MXN.', 'Toboganes extremos, Flow Rider (surf), islas infantiles, ríos, hotel, villas, campamento y servicio médico.', 'Calle Ribera del Río Yautepec s/n, Col. Gabriel Tepepa, Tlaquiltenango, Morelos.')">
+            <div class="img-title">El Rollo</div>
+        </div>
+
+        <div class="img-container">
+            <img src="IMAGENES/huertas.jpeg" alt="Balneario 5" onclick="mostrarInfo('Balneario Las Huertas', 'Un rústico y encantador oasis natural rodeado de densa vegetación que destaca por sus pozas naturales de aguas termales templadas. Cuenta con un asombroso nacimiento constante de agua que brota directo de la tierra a razón de 1,500 litros por segundo.', 'Abierto todos los días de 8:00 a.m. a 6:00 p.m.', 'Acceso General: Adultos $150 MXN / Niños $120 MXN \n Campamento: Adultos $350 MXN / Niños $250 MXN.', 'Pozas de agua termal, cascadas, aqua bar, campamento, cabañas rústicas, bungalows y asadores.', 'Carretera Federal 95 Km 149, Tlaquiltenango, Morelos.')">
+            <div class="img-title">Las Huertas</div>
+        </div>
+    </div>
+
+    <div id="informacion">
+        <h2>Bienvenido a Morelos</h2>
+        <img src="IMAGENES/collage.jpeg" alt="Morelos" class="img-inicio">
+        <p class="welcome-text">
+            Descubre algunos de los tesoros turísticos más importantes del estado de Morelos. 
+            Explora museos repletos de historia colonial, impresionantes haciendas prehispánicas y refrescantes balnearios y manantiales naturales.
+        </p>
+        <p class="welcome-hint">
+            <b>Instrucciones:</b> Selecciona una categoría arriba y haz clic sobre la foto de cualquier destino para desplegar su información detallada.
+        </p>
+    </div>
+
+    <script>
+        function mostrarMenu(menu) {
+            let menus = ["museos", "haciendas", "balnearios"];
+            
+            // Ocultar todos los submenús
+            menus.forEach(function(item) {
+                document.getElementById(item).style.display = "none";
+                document.getElementById('btn-' + item).classList.remove('active');
+            });
+
+            // Mostrar el seleccionado de la imagen
+            let seleccionado = document.getElementById(menu);
+            seleccionado.style.display = "grid";
+            
+            //El boton de presionar 
+            document.getElementById('btn-' + menu).classList.add('active');
+
+            // Resetear y mostrar la sección de información inicial
+            let info = document.getElementById("informacion");
+            info.style.opacity = 0;
+            setTimeout(() => {
+                info.innerHTML = `
+                    <h2>🌄 ¡Categoría Seleccionada!</h2>
+                    <p style="text-align:center; font-size: 18px; color:#555; margin-bottom: 15px;">Haz clic sobre cualquiera de las imágenes de arriba para desplegar toda su información, tarifas, horarios y servicios.</p>
+                `;
+                info.style.display = "block";
+                info.style.opacity = 1;
+            }, 200);
+        }
+
+        function mostrarInfo(nombre, descripcion, horario, costo, servicios, ubicacion) {
+            let info = document.getElementById("informacion");
+            info.style.display = "block";
+
+            // Reemplazar saltos de línea \n por etiquetas html <br>
+            let costoFormateado = costo.replace(/\n/g, '<br>');
+            let horarioFormateado = horario.replace(/\n/g, '<br>');
+
+            info.innerHTML = `
+                <h2>📍 ${nombre}</h2>
+                <div class="info-grid">
+                    <div class="info-card full-width">
+                        <div class="info-card-title">📖 Descripción</div>
+                        <p>${descripcion}</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">🕒 Horarios</div>
+                        <p>${horarioFormateado}</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-title">💵 Costos de Entrada</div>
+                        <p>${costoFormateado}</p>
+                    </div>
+                    <div class="info-card full-width">
+                        <div class="info-card-title">⭐ Servicios Disponibles</div>
+                        <p>${servicios}</p>
+                    </div>
+                    <div class="info-card full-width light-green">
+                        <div class="info-card-title">📌 Ubicación Exacta</div>
+                        <p>${ubicacion}</p>
+                    </div>
+                </div>
+            `;
+
+            // Scroll suave hacia la tarjeta de información
+            window.scrollTo({
+                top: info.offsetTop - 20,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
